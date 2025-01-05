@@ -1,0 +1,15 @@
+[package]
+name = "redrive"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rspc = "0.3.1"
+rspc-axum = { version = "0.2.1", features = ["ws"] }
+axum = "0.7.9" # Must match the same version used by rspc-axum
+specta = "2.0.0-rc.20"
+tokio = { version = "1.42.0", features = ["full"] }
+tower-http = { version = "0.6.2", default-features = false, features = ["cors"] }
+serde = "1.0.217"
+mime_guess = "2.0.5"
+rust-embed = "8.5.0"
